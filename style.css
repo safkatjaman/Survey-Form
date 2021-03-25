@@ -33,7 +33,7 @@ body::before {
           100deg,
           rgba(92, 142, 218, 0.8),
           rgba(215, 80, 233, 0.7)
-      ), url(/images/programming.jpg);
+      ), url(https://www.thecoderpedia.com/wp-content/uploads/2020/06/How-to-learn-Programming.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
