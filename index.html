@@ -1,1 +1,137 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="style.css">
+
+      <!-- GOOGLE FONT -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div id="main" class="container">
+            <header id="header">
+                  <h1 id="title">
+                        SD's Survey Form
+                  </h1>
+
+                  <p id="description">
+                        Thank you for taking the time to help up improve the platform
+                  </p>
+            </header>
+
+            <form action="" id="survey-form">
+                  <div class="form-group">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" id="name" class="form-control" name='name' placeholder="Enter your name" required>
+                  </div>
+
+                  <div class="form-group">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email" class="form-control" name='email' placeholder="'Enter your Email" required>
+                  </div>
+
+                  <div class="form-group">
+                        <label for="age" id="number-label">Age</label>
+                        <input type="number" id="number" class="form-control" name="age" min="10" max="69" placeholder="Age" required>
+                  </div>
+
+                  <div class="form-group">
+                        <p>Which option best describes your current role?</p>
+                        <select name="role"  id="dropdown" class="form-control">
+                              <option value="no-value" selected disabled>Select current role</option>
+                              <option value="student">Student</option>
+                              <option value="job">Full time job</option>
+                              <option value="learner">Full time learner</option>
+                              <option value="preferNo">Prefer not to say</option>
+                              <option value="other">Other</option>
+                        </select>
+                  </div>
+
+                  <div class="form-group">
+                        <p>Would you recommend SD to a friend?</p>
+                        <label>
+                        <input name="user-recommend" value="definitely" class="input-radio" type="radio" checked>Definitely
+                        </label>
+
+                        <label>
+                              <input name='user-recommend' value='maybe' type="radio" class="input-radio">Maybe
+                        </label>
+
+                        <label>
+                              <input type="radio" name='user-recommend' value='no' class="input-radio">No
+                        </label>
+                  </div>
+
+                  <div class="form-group">
+                        <p>What is your favorite feature of SD?</p>
+                        <select name="favorite" id="favorite-dropdown" class="form-control">
+                              <option value="no-value" disabled selected>Select an option</option>
+                              <option value="programming-contest">Programming Contest</option>
+                              <option value="projects">Projects</option>
+                              <option value="open-source">Open Source</option>
+                              <option value="other">Other</option>
+                        </select>
+                  </div>
+
+                  <div class="form-group">
+                        <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+
+                        <label>
+                              <input type="checkbox" name="front-end-projects" class="input-checkbox">Front-End Projects
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="back-end-projects" class="input-checkbox">Back-End Projects
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="data-visualization" class="input-checkbox">Data Visualization
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="programming-contest" class="input-checkbox">Programming Contest
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="open-source-community" class="input-checkbox">Open Source Community
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="help-rooms" class="input-checkbox">Help Rooms
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="videos" class="input-checkbox">Videos
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="city-meetups" class="input-checkbox">City Meetups
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="forum" class="input-checkbox">Forum
+                        </label>
+
+                        <label>
+                              <input type="checkbox" name="additional-courses" class="input-checkbox">Additional Courses
+                        </label>
+                  </div>
+
+                  <div class="form-group">
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="comment" id="comment-area" placeholder="Write your comment here..."></textarea>
+                  </div>
+
+                  <div class="form-group">
+                        <button type="submit" id="submit" class="submit-btn">Submit</button>
+                  </div>
+            </form>
+      </div>
+
+      <script src="app.js"></script>
+</body>
+</html>
